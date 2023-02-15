@@ -1,0 +1,65 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.lista {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(250, 241, 165);
+}
+
+.card {
+    border: solid;
+    width: 20%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    box-shadow: 2px 2px 13px;
+    transition: transform .2s;
+}
+
+
+div:hover div:not(:hover) {
+    filter: blur(50%);
+    color: transparent;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    
+}
+/* 
+img:hover img:not(:hover) {
+    filter: blur(50%);
+    color: transparent;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+} */
+
+
+div:hover img {
+    filter: blur(3px);
+}
+
+div img:hover {
+    filter: blur(0px);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+img {
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .lista {
+        display: block;
+    }
+    .card {
+      background-color: lightblue;
+      width: 100%;
+      text-align: center;
+    }
+  }
