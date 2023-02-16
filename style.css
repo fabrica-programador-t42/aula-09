@@ -21,30 +21,19 @@
 }
 
 
-div:hover div:not(:hover) {
-    filter: blur(50%);
-    color: transparent;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
-    
-}
 /* 
 img:hover img:not(:hover) {
     filter: blur(50%);
     color: transparent;
     text-shadow: 0 0 5px rgba(0,0,0,0.5);
 } */
-
-
-div:hover img {
+.lista:hover .card {
     filter: blur(3px);
 }
 
-div img:hover {
-    filter: blur(0px);
-}
-
-.card:hover {
+.lista .card:hover {
     transform: scale(1.1);
+    filter: blur(0px);
 }
 
 img {
